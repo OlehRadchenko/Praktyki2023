@@ -1,4 +1,4 @@
-function kalk(form, char){
+function calculate(form, char){
     let l1 = parseFloat(form.liczba1.value);
     let l2 = parseFloat(form.liczba2.value);
     let er;
