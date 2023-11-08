@@ -13,13 +13,13 @@ function funkcja(arr){
         arr = bubbleSort(arr); //posortowana tablica
         let wynik = przedostatni(arr);
         document.getElementById("wynik").innerHTML += "<br>Druga największa liczba to: "+wynik; //znaleźć przed ostatnią liczbę
-        console.log(wynik);
+        console.log(arr+" >> "+wynik);
     }else if(licz_str==arr.length){
         console.log("W tej tablicy są tylko teksty");
         arr = bubbleSort_str(arr);
         let wynik = przedostatni_str(arr);
         document.getElementById("wynik").innerHTML += "<br>Drugi najdłuższy tekst to: "+wynik;
-        console.log(wynik);
+        console.log(arr+" >> "+wynik);
     }else{
         console.log("W tej tablicy są różne typy danych lub nie są to liczby/teksty");
     }
