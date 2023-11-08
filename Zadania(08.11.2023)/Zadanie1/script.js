@@ -1,7 +1,7 @@
 function button(form){
-    let x = form.x.value;
-    let y = form.y.value;
-    if(y < x){ //XDDD czemu ten warunek działa? ogólnie jak robię y>x to nie działa ;c a tak działa XD
+    let x = parseFloat(form.x.value);
+    let y = parseFloat(form.y.value);
+    if(y > x){
         recur(x,y);
     }else{
         console.log("Y musi być większe od x");
