@@ -11,7 +11,7 @@ const lastElement = (array) => array.reverse()[0];
 console.log(lastElement(arr2));
 
 //3.
-const filterArray = (array, minValue = 0) => array.filter((element) => element > minValue); //Funkcja filtruje liczby które są większe od przekazanego argumentu minValue
+const filterArray = (array, minValue = 0) => array.filter((element) => element == minValue); //Funkcja filtruje liczby które są większe od przekazanego argumentu minValue
 console.log(filterArray(numbers, 2));
 
 //4.
