@@ -8,7 +8,7 @@ const createH1 = () =>{
         }
     })
     .then((myJson) => {
-        const jsonID3 = myJson.filter((post) => post.id == 3)[0]; //id = kawałek całego JSON'a o id=3
+        const jsonID3 = myJson.filter((post) => post.id == 3)[0]; //jsonID3 = kawałek całego JSON'a o id=3
         let myH1 = document.createElement("h1");
         myH1.textContent = jsonID3["title"];
         document.querySelector("body").appendChild(myH1);
