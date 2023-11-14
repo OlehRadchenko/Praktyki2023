@@ -1,14 +1,14 @@
 /*Stwórz kompozycję która na tablicy „books” zlicza ilość pozytywnych ocen (rating > 5), gdzie
 strony (pages) są liczbą nieparzystą oraz tytuł (title) zawiera liczbę.*/
 
-const books = [ //Dodałem do books rating bo w przykładzie nie było ;c
-    {title: 'Total loss 100', pages: 600, genre: 'fantasy', rating: 10},
-    {title: 'Total enlightenment', pages: 250, genre: 'romance', rating: 8},
-    {title: 'Big loss', pages: 400, genre: 'fantasy', rating: 5},
-    {title: 'Tenth Joy', pages: 32, genre: 'action', rating: 7},
-    {title: 'Quickfix number 4', pages: 15, genre: 'fantasy', rating: 3},
-    {title: 'World Ender 3', pages: 199, genre: 'fantasy', rating: 6},
-    {title: 'Paranormal', pages: 200, genre: 'thriller', rating: 2},
+const books = [
+    {title: 'Total loss 100', pages: 600, genre: 'fantasy', rating: 7},
+    {title: 'Total enlightenment', pages: 250, genre: 'romance', rating: 4},
+    {title: 'Big loss', pages: 400, genre: 'fantasy', rating: 2},
+    {title: 'Tenth Joy', pages: 32, genre: 'action', rating: 9},
+    {title: 'Quickfix number 4', pages: 15, genre: 'fantasy', rating: 8},
+    {title: 'World Ender 3', pages: 199, genre: 'fantasy', rating: 1},
+    {title: 'Paranormal', pages: 200, genre: 'thriller', rating: 5},
 ];
 const filterRatingMoreThan5 = (list) => list.filter((book) => book.rating > 5);
 
