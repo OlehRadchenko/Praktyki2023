@@ -1,5 +1,5 @@
 const createH1 = () =>{
-    fetch('https://jsonplaceholder.typicode.com/posts/3')
+    fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => {
         if(!response.ok){
             throw new Error("Network response was not OK ;c");
@@ -8,11 +8,12 @@ const createH1 = () =>{
         }
     })
     .then((myJson) => {
+        const jsonID3 = myJson.filter((post) => post.id == 3)[0]; //id = kawałek całego JSON'a o id=3
         let myH1 = document.createElement("h1");
-        myH1.textContent = myJson["title"];
+        myH1.textContent = jsonID3["title"];
         document.querySelector("body").appendChild(myH1);
         let myDIV = document.createElement("div");
-        myDIV.textContent = myJson["body"];
+        myDIV.textContent = jsonID3["body"];
         document.querySelector("h1").appendChild(myDIV);
     })
     .catch((error) => console.error("Error: ", error))
